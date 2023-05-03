@@ -5,8 +5,27 @@ public class UVa_1193_RadarInstallation {
     public static void main(String[] args) throws IOException {
         Scanner sc= new Scanner(new FileReader("input.txt"));
         PrintWriter out = new PrintWriter(System.out);
+        int n,d,cases=0;
+        while ((n= sc.nextInt())!=0 | (d= sc.nextInt())!=0){
+           cases++;
+           Pair[]islands=new Pair[n];
+           for (int i=0;i<n;i++){
+               int x= sc.nextInt();int y= sc.nextInt();
+               islands[i]=new Pair(x,y);
+           }
 
 
+        }
+
+
+    }
+    static class Pair{
+        int x;
+        int y;
+        public Pair(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
     }
     static class Scanner{
         StringTokenizer st;
