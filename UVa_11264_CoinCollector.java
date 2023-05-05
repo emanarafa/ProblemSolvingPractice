@@ -4,8 +4,8 @@ import java.util.StringTokenizer;
 
 public class UVa_11264_CoinCollector {
     public static void main(String[] args) throws IOException {
-       // Scanner sc=new Scanner(new FileReader("input.txt"));
-        Scanner sc=new Scanner(System.in);
+        Scanner sc=new Scanner(new FileReader("input.txt"));
+       // Scanner sc=new Scanner(System.in);
         PrintWriter out=new PrintWriter(System.out);
         int testCases= sc.nextInt();
         while (testCases-->0){
@@ -16,6 +16,8 @@ public class UVa_11264_CoinCollector {
             int res=calc(coinValues,n);
             out.println(res);
         }
+        out.flush();
+        out.close();
     }
     static int calc(int[]coinValues,int n){
         int latestSum=0;
